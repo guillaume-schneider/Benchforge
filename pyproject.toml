@@ -5,6 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "ipykernel>=6.29.5",
     "matplotlib>=3.9.3",
+    "notebook>=7.3.1",
     "psutil>=6.1.0",
 ]
+
+[tool.uv]
+dev-dependencies = [
+    "benchforge",
+]
+
+[tool.uv.sources]
+benchforge = { workspace = true }
